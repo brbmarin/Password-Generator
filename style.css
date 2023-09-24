@@ -8,8 +8,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-::section{
-    background-color:  #fff;
+::section {
+    background-color: #fff;
 }
 
 body {
@@ -80,4 +80,3 @@ button:last-child {
     width: 28%;
     border: 1px solid #6c757d
 }
-

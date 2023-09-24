@@ -7,9 +7,9 @@ function getPassword() {
     const passwordLenght = 24;
     let password = "";
 
-    for(let i = 0; i < passwordLenght; i++){
+    for (let i = 0; i < passwordLenght; i++) {
         let randomNumber = Math.floor(Math.random() * chars.length)
-        
+
         password += chars.substring(randomNumber, randomNumber + 1)
 
         // Afficher le mot de passe
@@ -22,18 +22,18 @@ function getPassword() {
 }
 
 // Copier le mot de passe
-function copyMdp(){
+function copyMdp() {
     const inputPassword = document.getElementById('password')
 
     // Vérifier la longueur du mot de passe
-    if(inputPassword.value.length === 24){
+    if (inputPassword.value.length === 24) {
         inputPassword.select()
         document.execCommand('copy')
 
         // Changement du style du bouton copier
         copyBtn.style.background = "transparent";
         copyBtn.style.color = "#000"
-    }else {
+    } else {
         alert('Veuillez générer un mot de passe')
     }
 }
